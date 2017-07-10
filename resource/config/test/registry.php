@@ -1,4 +1,5 @@
 <?php
+use Zan\Framework\Foundation\Application;
 
 return [
     "enable" => true,
@@ -48,7 +49,7 @@ return [
         // 可选, 默认 com.youzan.service, 配置服务发布到 具体的域, 与app_configs.${$app_name}.namespace 对应
         "domain" => "com.test.service",
         // 可选, 默认Application::getName(), 配置服务发布的 应用名
-        "appName"   => "{{APP_NAME}}",
+        "appName"   => Application::getName(),
         // 可选, 目前恒等于 nova
         "protocol"   => "nova",
     ],
