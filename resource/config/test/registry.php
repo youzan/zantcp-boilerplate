@@ -1,7 +1,7 @@
 <?php
 
 return [
-    "enable" => true,
+    "enable" => false,
 
     // registry 类型
     "type" => "etcd",
